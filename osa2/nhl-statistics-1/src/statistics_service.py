@@ -41,3 +41,4 @@ class StatisticsService:
             i += 1
 
         return result
+
