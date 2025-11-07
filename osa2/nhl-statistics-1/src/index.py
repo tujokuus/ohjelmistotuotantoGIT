@@ -18,6 +18,8 @@ def main():
     for player in top_scorers:
         print(player)
 
+    print(f"Top scorers count: {len(top_scorers)}")
+
 
 if __name__ == "__main__":
     main()
