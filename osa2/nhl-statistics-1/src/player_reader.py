@@ -2,8 +2,9 @@ from urllib import request
 from player import Player
 
 class PlayerReader:
-    def __init__(self):
-        self._url = "https://raw.githubusercontent.com/ohjelmistotuotanto-jyu/tehtavat/refs/heads/main/osa2/stats/players-23-24.txt"
+    def __init__(self, url):
+        self._url = url
+#        self._url = "https://raw.githubusercontent.com/ohjelmistotuotanto-jyu/tehtavat/refs/heads/main/osa2/stats/players-23-24.txt"
 
     def get_players(self):
         players_file = request.urlopen(self._url)
